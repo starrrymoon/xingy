@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>世说人格 · 在古人的故事里，遇见自己</title>
+<style>
+:root{--paper:#f6f3eb;--ink:#253e35;--muted:#68736a;--green:#315f4d;--red:#a64f3c;--line:#deded1;--white:#fffdf7}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC",sans-serif;font-size:16px;line-height:1.8}button,a{ -webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer}button:disabled{cursor:default}button:focus-visible,a:focus-visible{outline:3px solid #a64f3c;outline-offset:5px}h1,h2,h3,.serif{font-family:"Songti SC","SimSun",serif;font-weight:500}h1,h2,h3,p{margin-top:0}header{max-width:1120px;margin:auto;padding:25px 28px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}.brand{font-size:23px;letter-spacing:4px;display:flex;align-items:center;gap:12px}.seal{background:var(--red);color:#fff8e9;padding:2px 7px;font-size:16px;letter-spacing:0;border-radius:2px}.edition{font-size:12px;color:var(--muted);letter-spacing:2px}main{max-width:1050px;padding:55px 28px 35px;margin:auto;min-height:70vh}footer{max-width:1050px;margin:auto;padding:20px 28px 35px;font-size:12px;color:var(--muted);border-top:1px solid var(--line)}.eyebrow{font-size:12px;letter-spacing:3px;color:var(--red);margin-bottom:18px}.hero{display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:55px;padding:20px 0 45px}.hero h1{font-size:clamp(36px,5vw,57px);line-height:1.4;letter-spacing:3px;margin-bottom:22px}.intro{max-width:470px;color:var(--muted)}.primary{background:var(--green);color:white;border:1px solid var(--green);padding:14px 28px;border-radius:9px;min-height:50px;transition:background .2s}.primary:hover{background:#244c3d}.secondary{background:transparent;border:1px solid #adb8ad;color:var(--green);padding:11px 22px;border-radius:9px;min-height:46px}.fine{font-size:13px;color:var(--muted);margin-top:14px}.cover{position:relative;min-height:390px;background:#e7ebdf;border:1px solid #d2d9c9;border-radius:140px 140px 12px 12px;overflow:hidden;display:flex;align-items:center;justify-content:center}.cover svg{position:absolute;width:100%;height:100%;opacity:.65}.cover-title{writing-mode:vertical-rl;font-family:"Songti SC","SimSun",serif;font-size:37px;letter-spacing:12px;z-index:1;background:#f6f3ebd9;padding:28px 12px;box-shadow:0 10px 40px #354c3710}.cover-caption{position:absolute;bottom:22px;font-size:11px;letter-spacing:3px}.dimensions{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.small-card{padding:20px;background:var(--white);border:1px solid var(--line);border-radius:10px}.small-card strong{font-family:"Songti SC","SimSun",serif;font-weight:500;font-size:23px}.small-card p{font-size:12px;color:var(--muted);margin:5px 0 0}.notice{font-size:13px;color:var(--muted);padding:17px 0;margin:22px 0 0}.quiz{max-width:730px;margin:0 auto}.topline{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}progress{display:block;width:100%;height:6px;margin:14px 0 40px;border:0;border-radius:20px;overflow:hidden;background:#e3e5da}progress::-webkit-progress-bar{background:#e3e5da}progress::-webkit-progress-value{background:var(--green)}progress::-moz-progress-bar{background:var(--green)}.question-panel{background:var(--white);padding:38px;border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px #253e3504}.question-panel h1{font-size:28px;line-height:1.6;margin-bottom:10px}.instruction{font-size:13px;color:var(--muted);margin-bottom:26px}.options{display:grid;gap:15px}.option{display:flex;align-items:center;gap:16px;text-align:left;background:var(--white);border:1px solid #d7ded2;color:var(--ink);padding:20px;border-radius:10px;min-height:85px;transition:background .18s,border-color .18s}.option:hover,.option.selected{background:#eaf0e6;border-color:var(--green)}.option:disabled{opacity:.7}.letter{width:32px;height:32px;flex-shrink:0;border:1px solid #b7c2b3;border-radius:50%;display:grid;place-items:center;font-size:12px}.navrow{display:flex;justify-content:space-between;align-items:center;margin-top:23px;gap:15px}.text-button{border:0;background:transparent;color:var(--muted);padding:10px 0;font-size:13px}.result-top{text-align:center;margin-bottom:32px}.result-top h1{font-size:35px;margin-bottom:10px}.result-top p{color:var(--muted);font-size:14px}.badge{display:inline-block;border:1px solid #d6baab;border-radius:20px;font-size:12px;color:var(--red);padding:3px 12px}.result-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:22px;align-items:start}.personality{border:1px solid var(--line);border-radius:14px;background:var(--white);overflow:hidden}.personality-head{padding:30px;background:#e8eee2;border-bottom:1px solid var(--line)}.personality-head h2{font-size:32px;letter-spacing:3px;margin-bottom:7px}.personality-head p{font-size:13px;color:var(--muted);margin:0}.code{font-size:13px;letter-spacing:3px;color:var(--green);margin-bottom:8px}.section{padding:25px 30px;border-bottom:1px solid #e9e9de}.section:last-child{border-bottom:0}.section h3{font-size:18px;margin-bottom:12px}.section p{font-size:14px;margin:0;color:#536258}.section blockquote{margin:0;padding:18px;background:#f6f3eb;border-left:2px solid #b8c5ad;font-family:"Songti SC","SimSun",serif;font-size:19px}.pending{color:var(--muted);font-size:13px}.source{font-size:12px;color:var(--muted);margin-top:10px}.source a{color:var(--green)}.opposite .personality-head{background:#eee8de}.opposite .personality-head h2{font-size:25px}.opposite .section{padding:20px 24px}.axis-card{margin-bottom:22px;background:var(--white);border:1px solid var(--line);padding:25px 30px;border-radius:14px}.axis-row{padding:12px 0;border-bottom:1px solid #e9e9de;display:flex;gap:14px;align-items:flex-start}.axis-row:last-child{border-bottom:0}.axis-symbol{background:#e8eee2;padding:2px 12px;border-radius:5px;font-family:"Songti SC","SimSun",serif;font-size:22px}.axis-detail{flex:1}.axis-detail strong{font-size:14px;font-weight:500}.axis-detail p{font-size:12px;color:var(--muted);margin:1px 0}.result-actions{display:flex;justify-content:center;gap:12px;margin:30px 0;flex-wrap:wrap}.explanation{font-size:12px;color:var(--muted);text-align:center;max-width:660px;margin:0 auto 25px}.page-enter{animation:enter .25s ease-out}@keyframes enter{from{opacity:.5;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}@media(max-width:700px){header{padding:20px}.edition{letter-spacing:0}main{padding:30px 20px}.hero{grid-template-columns:1fr;gap:28px;padding-top:0}.hero h1{font-size:38px}.cover{min-height:260px;max-width:340px;width:100%;margin:auto;border-radius:100px 100px 12px 12px}.cover-title{font-size:28px;letter-spacing:8px;padding:18px 10px}.dimensions{grid-template-columns:repeat(2,1fr)}.small-card{padding:16px}.question-panel{padding:25px 20px}.question-panel h1{font-size:24px}.option{padding:17px 13px;font-size:15px}.result-grid{grid-template-columns:1fr}.section,.personality-head{padding:24px}.result-top h1{font-size:29px}.axis-card{padding:20px}.navrow{align-items:flex-start}.navrow .fine{margin:10px 0;text-align:right;font-size:12px}footer{padding-left:20px;padding-right:20px}}
+
+/* 参考图的宣纸、水墨、册页细线；不使用截图中的界面元素。 */
+:root{--paper:#f7f5ed;--ink:#353831;--muted:#74786e;--green:#4d6250;--red:#946352;--line:#d8d7cc;--white:#fffef8}
+body{background-image:radial-gradient(ellipse at 4% 38%,#9faaa015,transparent 38%),radial-gradient(ellipse at 90% 80%,#afa49310,transparent 36%)}
+.brand{color:#333c32}.seal{background:#8e6253}.cover{border-radius:7px;background:#eeeede;outline:1px solid #c6c9b9;outline-offset:-12px;box-shadow:0 16px 35px #383e3009}.cover svg{filter:grayscale(.85);opacity:.45}.cover-title{background:#fbf9efb8;box-shadow:none;color:#3e453b}.cover:after{content:'名士风骨';position:absolute;top:27px;right:25px;writing-mode:vertical-rl;letter-spacing:5px;font-family:SimSun,serif;font-size:13px;color:#7b8071}.cover-caption{bottom:27px}
+.question-panel,.personality,.axis-card{border-radius:7px;box-shadow:0 8px 24px #323b2e05}.question-panel{outline:1px solid #e8e8dc;outline-offset:-9px}.small-card{border-radius:5px}.personality-head{position:relative;background:linear-gradient(135deg,#f5f4e9,#e4e8dd);outline:1px solid #cdd2c3;outline-offset:-12px;padding:35px 30px;overflow:hidden}.personality-head:after{content:'◌';position:absolute;font-family:serif;font-size:230px;line-height:1;right:-50px;top:-48px;color:#9da78e18;pointer-events:none}.opposite .personality-head{background:linear-gradient(135deg,#f6f2e7,#e9e5da)}.named-card{display:flex;align-items:center;gap:25px;position:relative;z-index:1}.name{writing-mode:vertical-rl;font-size:44px;letter-spacing:8px;padding:12px 0;border-left:1px solid #b9c1ae;min-height:120px;flex-shrink:0}.personality-head h2{font-size:27px;letter-spacing:1px;margin:0 0 8px}.personality-head .eyebrow{margin-bottom:20px}.opposite .name{font-size:34px}.opposite .named-card{gap:18px}.opposite .personality-head h2{font-size:23px}.section blockquote{background:#f8f7ef;border:1px solid #dedfd2;border-left:2px solid #aeb7a2;border-radius:3px;line-height:2;font-size:18px;white-space:pre-line}.section p{white-space:pre-line;line-height:1.95}.section h3{color:#515d49}.source{line-height:1.8}.result-top .badge{background:#f6f0e6}.personality .section:last-child p{font-size:12px}.code{color:#59694e}.result-grid{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)}
+@media(max-width:700px){.result-grid{grid-template-columns:1fr}.cover{border-radius:7px}.personality-head h2{font-size:25px}.named-card{gap:22px}.name{font-size:39px}.section blockquote{font-size:17px}.opposite .name{font-size:36px}}
+
+
+.result-top{padding:30px 24px 42px;margin-bottom:28px;background:linear-gradient(135deg,#f9f7ee,#e9eddf);border:1px solid #d5d8c9;border-radius:7px;outline:1px solid #e0e2d6;outline-offset:-10px}
+.result-top .eyebrow{margin-bottom:18px;letter-spacing:5px}.result-top h1{font-size:clamp(38px,6vw,62px);font-weight:600;letter-spacing:5px;line-height:1.4;margin-bottom:12px}.result-name{font-size:30px;letter-spacing:9px;margin:6px 0 12px}.result-top .result-code{font-size:14px;letter-spacing:5px;margin-bottom:20px}.result-grid{margin-bottom:28px}.personality .section:last-child p{font-size:14px}.axis-card{margin-top:0}
+@media(max-width:700px){.result-top{padding:30px 18px}.result-top h1{font-size:38px;letter-spacing:2px}.result-name{font-size:27px}}
+
+</style>
+</head>
+<body>
+<header><div class="brand serif"><span class="seal">世说</span>世说人格</div><span class="edition">名士人格 · 世说风度</span></header>
+<main id="app"></main>
+<footer>这是基于文学故事的文化趣味测试。人格分类与现代解读为原创设计，不作为心理测评或诊断。古文与解读据用户提供的内容呈现。</footer>
+<script>
+'use strict';
+const QUESTIONS = [{"text": "空闲时，你更喜欢哪种状态？", "options": ["找人聊天聚会，热闹一点更舒服", "自己待着，安静独处更舒服"]}, {"text": "思考问题时，你更在意？", "options": ["实际结果、有用的细节、现实用处", "深层道理、内心感悟、精神想法"]}, {"text": "做选择、判断对错时，你更信？", "options": ["道理和规则，理智判断，不带情绪", "自己的感受，更体谅人情冷暖"]}, {"text": "如果计划一次短途出行，你更倾向于？", "options": ["提前做好详细攻略：路线、时间、预约、备选方案都安排妥当", "只定大致目的地，边走边看，临时改路线，不想被行程表束缚"]}, {"text": "面对团队、集体活动，你通常？", "options": ["主动参与，愿意配合大家做事", "不想参与，更喜欢自己单独做事"]}, {"text": "想要提升自己，你更偏向？", "options": ["学实用技能，积累真实经验", "多想多悟，丰富内心和思想"]}, {"text": "和人闹矛盾、处理人际问题，你会？", "options": ["就事论事，公平讲道理", "照顾对方心情，包容体谅他人"]}, {"text": "已经安排好的计划，突然冒出一个有吸引力的新机会，你通常？", "options": ["除非新机会价值极高，否则尽量按原定安排推进，不轻易改动主线", "很容易被新机会勾起兴趣，愿意调整甚至直接搁置原有计划"]}];
+const AXES = [
+{name:'交往方式',symbols:['群','独'],labels:['交流共鸣','独处自得'],descriptions:['你倾向在交流中获得回应，也愿意和别人共同探索。','你倾向给自己留出空间，在独处和深入交流中获得满足。']},
+{name:'关注方向',symbols:['实','虚'],labels:['经世务实','玄思悟道'],descriptions:['你倾向先了解具体依据和实际用途，再形成判断。','你倾向关注意义、意境和联想，让想象延伸到事物之外。']},
+{name:'判断方式',symbols:['理','情'],labels:['分析权衡','体察感受'],descriptions:['你倾向比较理由、条件和可行性，帮助自己作出选择。','你倾向理解感受和关系中的需要，寻找彼此能够接受的选择。']},
+{name:'行动节奏',symbols:['定','兴'],labels:['安排守约','随兴调整'],descriptions:['你倾向依照安排推进，在稳定的节奏里获得安心。','你倾向留出调整的余地，回应当下的兴趣与新机会。']}
+];
+// 人格内容由用户提供；此处为唯一数据源，对照结果读取同一表。
+const PERSONALITIES = {
+  "0000": {
+    "key": "0000",
+    "number": 1,
+    "type": "经世镇士型",
+    "title": "乱世掌舵人",
+    "representative": "桓温",
+    "original": "桓公北征，经金城，见前为琅邪时种柳，皆已十围，慨然曰：“木犹如此，人何以堪！”攀枝执条，泫然流泪。",
+    "translation": "桓温北伐途经金城，看见自己早年任职时栽种的柳树已长得粗壮繁茂，不由得感慨：“树木尚且经不起岁月流逝，人又怎能承受时光消磨！”他攀住柳枝，潸然落泪。",
+    "interpretation": "你是一位擅长长期布局的掌舵者，懂得联结伙伴、积累资源，也让社交服务于真正想完成的事。脑子里永远优先盘算落地结果，不爱空谈虚玄大道理。就算偶尔被场景戳中，生出感慨和伤感，情绪也只是一闪而过，不会打乱长期布局。\n\n放到现实，就是大项目负责人，擅长铺长线规划，定力拉满，认准目标就稳步推进。可以感性一秒，但绝不让感性接管决策。名士氛围感：纵有怅然，不误宏图。",
+    "sourceTitle": "《世说新语·言语》",
+    "sourceUrl": "https://zh.wikisource.org/wiki/世說新語/言語",
+    "family": "素实族",
+    "mappingNote": "人物分类与现代解读来自你们提供的原创内容；文学故事不等同于对历史人物的完整心理判断。",
+    "mirrorNote": "16.独·虚·情·兴【疏离文青｜阮籍】（入世务实守志 VS 出世抒情随性）",
+    "sources": [
+      {
+        "title": "《世说新语·言语》",
+        "url": "https://zh.wikisource.org/wiki/世說新語/言語"
+      }
+    ]
+  },
+  "1000": {
+    "key": "1000",
+    "number": 2,
+    "type": "恪行笃士型",
+    "title": "自律者",
+    "representative": "陶侃",
+    "original": "陶公性检厉，勤于事。作荆州时，敕船官悉录锯木屑，不限多少。咸不解其意。后正会，值积雪始晴，听事前除雪后犹湿，于是悉用木屑覆之，都无所妨。官用竹，皆令录厚头，积之如山。后桓宣武伐蜀，装船，悉以作钉。",
+    "translation": "陶侃性情严谨自律、勤勉务实。任职荆州时，下令船官尽数收集锯木屑，众人都不理解他的用意。后来正月集会，大雪初晴，厅堂前的台阶泥泞潮湿，便用木屑铺垫，行走毫无阻碍。官府所用的竹子，他都让人留存厚实的竹根，堆积如山。后来桓温讨伐蜀国，打造战船时，这些竹根全部被用来做船钉，物尽其用。",
+    "interpretation": "你是一位严谨自律、习惯未雨绸缪的笃行者，能够独处自洽，对无效社交没有太多热情。眼光盯在实实在在的物件、流程、储备上，习惯按逻辑预判风险，凡事喜欢留后手。做事有稳定节奏，愿意做短期看不出收益、但关键时刻救命的准备。\n\n现实里像靠谱技术骨干或风控，平时安静低调，不抢风头，可一出状况，大家最先指望的就是他。主打一个细水长流，一切讲求物尽其用，很少做“单纯图开心”的无用投入。名士氛围感：藏功于细，静而有备。",
+    "sourceTitle": "《世说新语·政事》",
+    "sourceUrl": "https://zh.wikisource.org/wiki/世說新語/政事",
+    "family": "素实族",
+    "mappingNote": "人物分类与现代解读来自你们提供的原创内容；文学故事不等同于对历史人物的完整心理判断。",
+    "mirrorNote": "14.群·虚·情·兴【小神仙｜支遁】（坚守秩序务实 VS 随性空灵悟道）",
+    "sources": [
+      {
+        "title": "《世说新语·政事》",
+        "url": "https://zh.wikisource.org/wiki/世說新語/政事"
+      }
+    ]
+  },
+  "0001": {
+    "key": "0001",
+    "number": 3,
+    "type": "顺势豪雄型",
+    "title": "灵活博弈者",
+    "representative": "王敦",
+    "original": "王大将军年少时，旧有田舍名，语音亦楚。武帝唤时贤共言伎艺事，人皆多有所知，唯王都无所关，意色殊恶，自言知打鼓吹。帝令取鼓与之，于坐振袖而起，扬槌奋击，音节谐捷，神气豪上，傍若无人。举坐叹其雄爽。",
+    "translation": "王敦年少时，乡土气息浓重，口音粗朴。晋武帝召集当世贤士谈论才艺技艺，众人皆能侃侃而谈，唯独王敦全然不懂，神色不悦，自称擅长击鼓。武帝命人取来鼓具，王敦当即振袖起身，扬槌击鼓，节奏明快铿锵，神情豪迈昂扬、旁若无人，满座之人都赞叹他的雄健豪爽。",
+    "interpretation": "你是一位嗅觉敏锐的灵活博弈者，善于在交流与局势变化中捕捉机会。不排斥社交，但社交是展示自己、寻找机遇的舞台。可以当场感到不爽，有即时情绪，可不会被情绪困住摆烂，能迅速换赛道，亮出自己的强项，即兴破局。不爱死守一套固定方案，环境一变，打法就跟着变。\n\n现实对标敢冲的开拓者，抓风口一把好手，反应快，敢当众秀实力。主打灵活借势，机会来了直接上，不拘泥预设剧本。名士氛围感：一时不快何妨，趁势振鼓，自成锋芒。",
+    "sourceTitle": "《世说新语·豪爽》",
+    "sourceUrl": "https://zh.wikisource.org/wiki/世說新語/豪爽",
+    "family": "素实族",
+    "mappingNote": "人物分类与现代解读来自你们提供的原创内容；文学故事不等同于对历史人物的完整心理判断。",
+    "mirrorNote": "15.独·虚·情·定【悟道者｜向秀】（入世博弈逐势 VS 出世悲悯守心）",
+    "sources": [
+      {
+        "title": "《世说新语·豪爽》",
+        "url": "https://zh.wikisource.org/wiki/世說新語/豪爽"
+      }
+    ]
+  },
+  "1001": {
+    "key": "1001",
+    "number": 4,
+    "type": "匠思隐贤型",
+    "title": "低调匠人",
+    "representative": "戴逵",
+    "original": "戴公从东出，谢太傅往看之。谢本轻戴，见但与论琴书。戴既无吝色，而谈琴书愈妙。谢悠然知其量。",
+    "translation": "戴逵从江东来到京城，谢安前去探望。谢安原本轻视戴逵的名望，见面后只与他谈论琴艺、书法这类技艺小事。戴逵毫无局促不悦之色，谈论琴书义理愈发精妙通透。谢安由此从容察觉到戴逵宽广的胸襟与深厚的学识。",
+    "interpretation": "你是一位偏爱独处深耕的低调匠人，不热衷于频繁应酬，更愿意用作品和技艺表达自己。兴趣大多落在技艺、实操、看得见摸得着的细节上，习惯理性拆解门道，拒绝空泛玄学。做事没有死板流程，愿意在实践里反复试错，随缘打磨，灵感来了就猛干一阵。\n\n现实里像独立手艺人、设计师、技术大佬，有真东西，但不爱主动宣传。被低估也不急着争辩，聊到擅长领域才会闪闪发光。名士氛围感：静研技艺，不事张扬，自有分量。",
+    "sourceTitle": "《世说新语·雅量》",
+    "sourceUrl": "https://zh.wikisource.org/wiki/世說新語/雅量",
+    "family": "素实族",
+    "mappingNote": "人物分类与现代解读来自你们提供的原创内容；文学故事不等同于对历史人物的完整心理判断。",
+    "mirrorNote": "13.群·虚·情·定【风度小生｜谢道韫】（隐世务实守技 VS 沉稳守度济世）",
+    "sources": [
+      {
+        "title": "《世说新语·雅量》",
+        "url": "https://zh.wikisource.org/wiki/世說新語/雅量"
+      }
+    ]
+  },
+  "0010": {
+    "key": "0010",
+    "number": 5,
+    "type": "雅和济世型",
+    "title": "调和者",
+    "representative": "王导",
+    "original": "丞相末年，略不复省事，正封箓诺之。自叹曰：“人言我愦愦，后人当思此愦愦。”",
+    "translation": "王导晚年执掌朝政，几乎不再严苛细查琐事，只对文书签字应允、宽和处事。他自我感叹道：“世人都说我糊涂慵懒，后世之人定会明白，正是这份宽和包容，才保全了江东安稳。”",
+    "interpretation": "你是一位善于调和关系的协调者，能够斡旋多方，也看得懂现实里每个人的难处。判断优先顾及人的感受，追求缓和矛盾，而非硬辩输赢。包容不是无底线，内心有长期稳定的标尺，不会跟着舆论风向反复横跳。\n\n现实对标团队协调人，很会调停吵架，习惯求稳求和，愿意适度包容，维系长久和睦。容易为了大局让步，但心里清楚自己守住的底线在哪。名士氛围感：以宽济事，不逐一时口舌之胜。",
+    "sourceTitle": "《世说新语·政事》",
+    "sourceUrl": "https://zh.wikisource.org/wiki/世說新語/政事",
+    "family": "风物族",
+    "mappingNote": "人物分类与现代解读来自你们提供的原创内容；文学故事不等同于对历史人物的完整心理判断。",
+    "mirrorNote": "12.独·虚·理·兴【叛逆少年｜刘伶】（合群包容济世 VS 解构世俗破规）",
+    "sources": [
+      {
+        "title": "《世说新语·政事》",
+        "url": "https://zh.wikisource.org/wiki/世說新語/政事"
+      }
+    ]
+  },
+  "1010": {
+    "key": "1010",
+    "number": 6,
+    "type": "怀情守拙型",
+    "title": "柔情赤子",
+    "representative": "荀粲",
+    "original": "荀奉倩与妇至笃，冬月妇病热，乃出中庭自取冷，还以身熨之。妇亡，奉倩后少时亦卒。",
+    "translation": "荀粲与妻子感情极为深厚，冬日里妻子身患热病，他便走到庭院中让自己受寒变冷，再回到屋内用身体为妻子降温。妻子去世后，荀粲悲痛难抑，不久也随之离世。",
+    "interpretation": "你是一位慢热专一的柔情赤子，把真心留给极少数人，也把关心落在实际行动里。理解的爱是落到行动上的，不是漂亮空话。一旦认定一份感情，这份心意会长期稳定，不会随新鲜感消散。比起浪漫构想，更愿意做实打实、看得见的付出。\n\n现实里就是行动派爱人，少说情话，多办实事。认定之后长情专一，用情很深，一旦失去，很难快速抽离。名士氛围感：情不在虚言，贵在以身相赴。",
+    "sourceTitle": "《世说新语·惑溺》",
+    "sourceUrl": "https://zh.wikisource.org/wiki/世說新語/惑溺",
+    "family": "风物族",
+    "mappingNote": "人物分类与现代解读来自你们提供的原创内容；文学故事不等同于对历史人物的完整心理判断。",
+    "mirrorNote": "10.群·虚·理·兴【思辨者｜王弼】（守私情质朴 VS 入世玄思立辩）",
+    "sources": [
+      {
+        "title": "《世说新语·惑溺》",
+        "url": "https://zh.wikisource.org/wiki/世說新語/惑溺"
+      }
+    ]
+  },
+  "0011": {
+    "key": "0011",
+    "number": 7,
+    "type": "乘兴风流型",
+    "title": "耍起贯彻者",
+    "representative": "王羲之",
+    "original": "①东床坦腹。郗太傅在京口，遣门生与王丞相书，求女婿。门生归白郗曰：“王家诸郎，亦皆可嘉，闻来觅婿，咸自矜持。唯有一郎，在东床上坦腹卧，如不闻。”郗公云：“正此好！”访之，乃是逸少，因嫁女与焉。\n\n②王右军得人以《兰亭集序》方《金谷诗序》，又以己敌石崇，甚有欣色。",
+    "translation": "郗鉴派人去王家选女婿，王家年轻子弟听说之后，全都刻意端正拘谨，只有王羲之，敞着肚子躺在东床上，仿佛没听见这件事。郗鉴听闻，说：“就这个最好！”，于是把女儿嫁给他。\n\n又，王羲之听说有人拿他的《兰亭集序》与石崇的《金谷诗序》相比，又把自己看作可与石崇匹敌，脸上露出十分高兴的神色。",
+    "interpretation": "你是一位享受同好相聚的乘兴风流者，能够自在合群，也愿意组织松弛、有趣的小聚会。注意力偏爱具象、可触摸的事物，共情力在线。行事主打“兴致优先”，讨厌强行端架子、演世俗期待的样子，计划可以随心情调整。\n\n现实对标松弛感满满的文艺组织者、兴趣博主，开心就张罗局，灵感来了就创作。最怕被死板日程捆死，热度一过，很容易把事情搁置。名士氛围感：兴之所至，不拘俗套，风流本自天然。",
+    "sourceTitle": "《世说新语·雅量》、《世说新语·企羡》",
+    "sourceUrl": "https://zh.wikisource.org/wiki/世說新語/雅量",
+    "family": "风物族",
+    "mappingNote": "人物分类与现代解读来自你们提供的原创内容；文学故事不等同于对历史人物的完整心理判断。",
+    "mirrorNote": "11.独·虚·理·定【理想者｜嵇康】（风流随性游世 VS 孤高守道抗世）",
+    "sources": [
+      {
+        "title": "《世说新语·雅量》",
+        "url": "https://zh.wikisource.org/wiki/世說新語/雅量"
+      },
+      {
+        "title": "《世说新语·企羡》",
+        "url": "https://zh.wikisource.org/wiki/世說新語/企羨"
+      }
+    ]
+  },
+  "1011": {
+    "key": "1011",
+    "number": 8,
+    "type": "感物审美型",
+    "title": "艺术家",
+    "representative": "顾恺之",
+    "original": "顾长康画人，或数年不点目精。人问其故，顾曰：“四体妍蚩，本无关于妙处；传神写照，正在阿堵中。”",
+    "translation": "顾恺之绘制人物画像，有时数年都不画上眼珠。有人询问原因，他说：“人体四肢的美丑，原本无关画作的精妙意境；想要描摹人物的神韵风骨，关键就在这双眼之中。”",
+    "interpretation": "你是一位偏爱沉浸式独处的艺术家，比起大型社交，更享受专注观察和自在创作。对现实里细微神态、光影、氛围感极其敏感，很容易被小细节打动。创作跟着灵感走，不会按固定流水线产出，追求抓住藏在物象里的情绪和灵气。\n\n现实像摄影师、插画师、氛围感文案，感知力拉满，擅长捕捉别人看不见的情绪细节。但情绪起伏跟着感受走，枯燥重复的长期任务很容易让他倦怠。名士氛围感：写形容易，传神最难，专抓心动一瞬。",
+    "sourceTitle": "《世说新语·巧艺》",
+    "sourceUrl": "https://zh.wikisource.org/wiki/世說新語/巧藝",
+    "family": "风物族",
+    "mappingNote": "人物分类与现代解读来自你们提供的原创内容；文学故事不等同于对历史人物的完整心理判断。",
+    "mirrorNote": "9.群·虚·理·定【思想引领者｜何晏】（独处潜创作 VS 聚众立玄理）",
+    "sources": [
+      {
+        "title": "《世说新语·巧艺》",
+        "url": "https://zh.wikisource.org/wiki/世說新語/巧藝"
+      }
+    ]
+  },
+  "0100": {
+    "key": "0100",
+    "number": 9,
+    "type": "立谈宗士型",
+    "title": "思想引领者",
+    "representative": "何晏",
+    "original": "何晏注《老子》未毕，见王弼自说注《老子》旨，何意多所短，不复得作声，但应诺诺。遂不复注，因作《道德论》。",
+    "translation": "何晏注解《老子》，还没有完成。他听到王弼阐说自己注解《老子》的主旨，发现王弼的见解多处胜过自己，（何晏）说不出话来，只能连连应声。于是他不再继续作注，转而撰写了《道德论》。",
+    "interpretation": "你是一位热衷观念碰撞的思想引领者，喜欢参与讨论，也乐于拆解事物的底层逻辑。比起实操干活，更沉迷概念、义理、形而上的思考。心里会搭建一套自洽的思想框架，一旦成型，会长久维护完善，不会随便跟风换新理论。\n\n现实对标哲学博主、理论型讲师，酷爱辨析定义，享受逻辑闭环。能承认别人说得更好，但不会就此放弃构建体系这件事。偶尔容易沉浸在理论世界，忽略人情现实。名士氛围感：乐于论道，求义理之完备。",
+    "sourceTitle": "《世说新语·文学》",
+    "sourceUrl": "https://zh.wikisource.org/wiki/世說新語/文學",
+    "family": "玄思族",
+    "mappingNote": "人物分类与现代解读来自你们提供的原创内容；文学故事不等同于对历史人物的完整心理判断。",
+    "mirrorNote": "8.独·实·情·兴【艺术家｜顾恺之】（聚众立玄理 VS 独心潜创作）",
+    "sources": [
+      {
+        "title": "《世说新语·文学》",
+        "url": "https://zh.wikisource.org/wiki/世說新語/文學"
+      }
+    ]
+  },
+  "0101": {
+    "key": "0101",
+    "number": 10,
+    "type": "辩思灵士型",
+    "title": "思辩者",
+    "representative": "王弼",
+    "original": "王辅嗣弱冠诣裴徽，徽问曰：“夫无者，诚万物之所资，圣人莫肯致言，而老子申之无已，何邪？”弼曰：“圣人体无，无又不可以训，故言必及有；老、庄未免于有，恒训其所不足。”",
+    "translation": "年少的王弼拜访裴徽，裴徽问道：“‘无’是世间万物的本源依托，圣人从不刻意言说，而老子却反复阐释，这是为何？”王弼答道：“圣人内心体悟‘无’的大道，但‘无’无法用言语阐释，所以言谈必然落脚于具象之‘有’；老庄尚未超脱‘有’的桎梏，所以常常阐释自身所欠缺的‘无’。”",
+    "interpretation": "你是一位思维敏捷的思辨者，最爱与人交锋观点，享受灵感相互碰撞的瞬间。喜欢啃抽象、底层的大问题，不怎么关心落地实操。思路不受固定框架束缚，常常即兴蹦出新猜想，举一反三一把好手。\n\n现实对标辩手、脑洞型学霸，新角度说来就来。短板是收尾耐心不足，想法层出不穷，但很少沉下心落地做完。名士氛围感：思如泉涌，即兴开悟，胜在灵捷。",
+    "sourceTitle": "《世说新语·文学》",
+    "sourceUrl": "https://zh.wikisource.org/wiki/世說新語/文學",
+    "family": "玄思族",
+    "mappingNote": "人物分类与现代解读来自你们提供的原创内容；文学故事不等同于对历史人物的完整心理判断。",
+    "mirrorNote": "6.独·实·情·定【柔情赤子｜荀粲】（入世玄思立辩VS 守私情质朴）",
+    "sources": [
+      {
+        "title": "《世说新语·文学》",
+        "url": "https://zh.wikisource.org/wiki/世說新語/文學"
+      }
+    ]
+  },
+  "1100": {
+    "key": "1100",
+    "number": 11,
+    "type": "守道孤贤型",
+    "title": "理想者",
+    "representative": "嵇康",
+    "original": "嵇中散临刑东市，神气不变。索琴弹之，奏《广陵散》。曲终，曰：“袁孝尼尝请学此散，吾靳固不与，《广陵散》于今绝矣！”太学生三千人上书，请以为师，不许。文王寻亦悔焉。",
+    "translation": "嵇康在东市即将受刑，神色气度毫无改变。他索要古琴弹奏《广陵散》，一曲终了，叹息道：「袁准曾经请求学习这首曲子，我吝啬固执不肯传授，如今《广陵散》就此失传了！」三千名太学生上书朝廷，请求以嵇康为师，未被准许。不久，司马昭也心生悔意。",
+    "interpretation": "你是一位傲骨鲜明、坚守原则的理想者，重视自己的价值判断，不愿轻易向违背本心的事妥协。喜欢独处自省，不屑无效社交、圆滑世故。精神世界极其丰富，坚守自己的底线和道义，做人做事只遵从真理和本心。性格刚正、宁折不弯，不迎合、不谄媚、不同流合污。现代对应：有原则的清流、坚守初心的追梦人、极度自律的理想主义者。人品顶配、风骨绝佳，哪怕不合群，也绝不委屈自己妥协世俗。唯一代价是过于清高，容易被世俗误解、不懂圆滑自保",
+    "sourceTitle": "《世说新语·雅量》",
+    "sourceUrl": "https://zh.wikisource.org/wiki/世說新語/雅量",
+    "family": "玄思族",
+    "mappingNote": "人物分类与现代解读来自你们提供的原创内容；文学故事不等同于对历史人物的完整心理判断。",
+    "mirrorNote": "7.群·实·情·兴【耍起贯彻者｜王羲之】（孤高守道抗世 VS 风流随性游世）",
+    "sources": [
+      {
+        "title": "《世说新语·雅量》",
+        "url": "https://zh.wikisource.org/wiki/世說新語/雅量"
+      }
+    ]
+  },
+  "1101": {
+    "key": "1101",
+    "number": 12,
+    "type": "解构狂士型",
+    "title": "叛逆少年",
+    "representative": "刘伶",
+    "original": "刘伶恒纵酒放达，或脱衣裸形在屋中，人见讥之。伶曰：“我以天地为栋宇，屋室为裈衣，诸君何为入我裈中！”",
+    "translation": "刘伶常年纵情饮酒、放达不羁，有时在屋内赤裸身体，旁人见状讥讽他失礼。刘伶说道：“我以天地为房屋，以屋室为衣裤，你们为何钻进我的裤子里来非议我！”",
+    "interpretation": "你是一位清醒叛逆、追求自在的解构者，愿意跳出既有框架，用自己的方式理解生活。不爱合群应酬，看透世俗规则的虚伪，喜欢用自己的方式解构刻板规矩。头脑极度清醒理智，看得穿人性、看得透套路，却选择随性放达、自在活着。不被世俗标准绑架，不焦虑内卷，活得极度松弛自由。现代对应：清醒叛逆者、反焦虑达人、极简自由人。别人被规矩束缚，他们直接跳出框架活自己。短板是过于洒脱，偶尔显得离经叛道、不被世俗理解。",
+    "sourceTitle": "《世说新语·任诞》",
+    "sourceUrl": "https://zh.wikisource.org/wiki/世說新語/任誕",
+    "family": "玄思族",
+    "mappingNote": "人物分类与现代解读来自你们提供的原创内容；文学故事不等同于对历史人物的完整心理判断。",
+    "mirrorNote": "5.群·实·情·定【调和者｜王导】（解构世俗破规 VS 合群包容济世）",
+    "sources": [
+      {
+        "title": "《世说新语·任诞》",
+        "url": "https://zh.wikisource.org/wiki/世說新語/任誕"
+      }
+    ]
+  },
+  "0110": {
+    "key": "0110",
+    "number": 13,
+    "type": "怀度弘士型",
+    "title": "风度小生",
+    "representative": "谢道韫",
+    "original": "谢太傅寒雪日内集，与儿女讲论文义。俄而雪骤，公欣然曰：“白雪纷纷何所似？”兄子胡儿曰：“撒盐空中差可拟。”兄女曰：“未若柳絮因风起。”公大笑乐。",
+    "translation": "一个下雪天，谢安把家里晚辈聚在一起，讨论文学义理。雪忽然下急了，谢安兴致勃勃问：纷飞白雪像什么？侄子说，像撒在空中的盐。谢道韫答：不如比作柳絮乘着风漫天飞舞。谢安听了，十分开心。",
+    "interpretation": "你是一位从容参与雅集的怀度之士，享受集体探讨与同好之间的精神交流。比起客观描述“雪是什么”，更偏爱意象、诗意、氛围感这类形而上的感受。共情细腻，审美感知力强，内在风骨稳定，境遇剧变也不容易丢掉自己的审美与心性。\n\n现实对标沉静有审美的读书会组织者、文学爱好者，温和但有内核。不追求热闹喧哗，心里那份诗意与自持，能长久稳住自己。名士氛围感：妙在意象，风骨不移，温柔而有分量。",
+    "sourceTitle": "《世说新语·言语》",
+    "sourceUrl": "https://zh.wikisource.org/wiki/世說新語/言語",
+    "family": "幽怀族",
+    "mappingNote": "人物分类与现代解读来自你们提供的原创内容；文学故事不等同于对历史人物的完整心理判断。",
+    "mirrorNote": "4.独·实·理·兴【低调匠人｜戴逵】（沉稳守度济世 VS 隐世务实守技）",
+    "sources": [
+      {
+        "title": "《世说新语·言语》",
+        "url": "https://zh.wikisource.org/wiki/世說新語/言語"
+      }
+    ]
+  },
+  "0111": {
+    "key": "0111",
+    "number": 14,
+    "type": "玄韵仙士型",
+    "title": "小神仙",
+    "representative": "支遁",
+    "original": "支道林常养数匹马。或言：“道人畜马不韵。”支曰：“贫道重其神骏。”",
+    "translation": "支遁常年饲养几匹马，有人非议：“出家道人养马，不合清雅气韵。”支遁回应：“我看重的是马匹身上灵动俊逸的精神风骨。”",
+    "interpretation": "你是一位珍惜精神共鸣的玄韵之士，爱与同好谈玄交游，也愿意回应万物的神采。打动他的不是事物实用价值，而是藏在里面的气韵、神采。感知优先，能共情万物自带的灵气，审美发自本心，不被“理应如何”的世俗标准绑架。行动随心有感，没有严苛的行为守则。\n\n现实像佛系文艺爱好者，爱聊感受、意境、精神体验。对琐碎实务耐心一般，容易活在审美与精神感受里。名士氛围感：不求实用，但取神意，心赏灵气。",
+    "sourceTitle": "《世说新语·言语》",
+    "sourceUrl": "https://zh.wikisource.org/wiki/世說新語/言語",
+    "family": "幽怀族",
+    "mappingNote": "人物分类与现代解读来自你们提供的原创内容；文学故事不等同于对历史人物的完整心理判断。",
+    "mirrorNote": "2.独·实·理·定【自律者｜陶侃】（坚守秩序务实 VS 随性空灵悟道）",
+    "sources": [
+      {
+        "title": "《世说新语·言语》",
+        "url": "https://zh.wikisource.org/wiki/世說新語/言語"
+      }
+    ]
+  },
+  "1110": {
+    "key": "1110",
+    "number": 15,
+    "type": "悟道怀仁型",
+    "title": "悟道者",
+    "representative": "向秀",
+    "original": "嵇中散既被诛，向子期举郡计入洛，文王引进，问曰：“闻君有箕山之志，何以在此？”对曰：“巢、许狷介之士，不足多慕！”王大咨嗟。",
+    "translation": "嵇康被诛杀后，向秀以郡计吏的身份入京，司马昭召见他，问道：“听闻你有隐居避世的志向，如今为何会来到京城？”向秀答道：“巢父、许由这类孤高偏执的隐士，并不值得过分仰慕。”司马昭听闻后大为赞叹。",
+    "interpretation": "你是一位偏爱安静独处的悟道者，不喜喧嚣应酬，习惯思考生死、名教、自然这些宏大命题。共情力强，能看懂世道里人的无奈，自带悲悯底色。这个人格的“定”，不是一辈子选择不变，而是内核的悲悯和价值感稳定；外在选择可以顺应现实，却不会被世俗功名同化。\n\n现实里就是懂妥协的温柔理想派，看清现实不偏激硬刚，但内心柔软的底线一直都在。外人容易误会他“变了”，但他自己分得清：变通≠随波逐流。名士氛围感：外可顺时，内存悲悯，不执一端。",
+    "sourceTitle": "《世说新语·言语》",
+    "sourceUrl": "https://zh.wikisource.org/wiki/世說新語/言語",
+    "family": "幽怀族",
+    "mappingNote": "人物分类与现代解读来自你们提供的原创内容；文学故事不等同于对历史人物的完整心理判断。",
+    "mirrorNote": "3.群·实·理·兴【灵活博弈者｜王敦】（出世悲悯守心 VS 入世强势逐势）",
+    "sources": [
+      {
+        "title": "《世说新语·言语》",
+        "url": "https://zh.wikisource.org/wiki/世說新語/言語"
+      }
+    ]
+  },
+  "1111": {
+    "key": "1111",
+    "number": 16,
+    "type": "寄情幽士型",
+    "title": "疏离文青",
+    "representative": "阮籍",
+    "original": "阮公邻家妇，有美色，当垆酤酒。阮与王安丰常从妇饮酒，阮醉，便眠其妇侧。夫始殊疑之，伺察，终无他意。",
+    "translation": "阮籍邻家妇人容貌美丽，以卖酒为生。阮籍常与王戎到她那里饮酒，醉了便睡在那妇人身旁。她的丈夫起初十分怀疑，暗中观察，发现阮籍始终没有别的意图。",
+    "interpretation": "你是一位珍惜独处、拒绝无效社交的疏离文青，不愿在泛泛应酬中勉强表演合群。精神世界很丰富，爱神游意境、感受情志，不太看重现实功利。待人全凭本心好恶，合得来就掏心，合不来懒得客套；行事跟着心境流动，不爱固化一套行为模式。\n\n现实里是精神洁癖型文艺人，对真诚度要求极高，可以短暂入世周旋，但内心始终和世俗客套保持距离。不怕孤独，就怕虚假的逢场作戏。名士氛围感：青眼唯赠知己，不愿向俗强欢。",
+    "sourceTitle": "《世说新语·任诞》",
+    "sourceUrl": "https://zh.wikisource.org/wiki/世說新語/任誕",
+    "family": "幽怀族",
+    "mappingNote": "人物分类与现代解读来自你们提供的原创内容；文学故事不等同于对历史人物的完整心理判断。",
+    "mirrorNote": "1.群·实·理·定【乱世掌舵人｜桓温】（出世抒情随性 VS 入世务实守志）",
+    "sources": [
+      {
+        "title": "《世说新语·任诞》",
+        "url": "https://zh.wikisource.org/wiki/世說新語/任誕"
+      }
+    ]
+  }
+};
+function oppositeKey(key){return key.split('').map(v=>v==='0'?'1':'0').join('');}
+function calculate(answers){
+ if(answers.length!==8||answers.some(v=>v!==0&&v!==1))throw new Error('请完成全部8题');
+ const mixed=AXES.map((_,i)=>answers[i]!==answers[i+4]);
+ const key=answers.slice(4).join('');
+ return {key,mixed,personality:PERSONALITIES[key],opposite:PERSONALITIES[oppositeKey(key)]};
+}
+const state={screen:'home',index:0,answers:Array(8).fill(null),locked:false,timer:null,revision:0};
+const app=document.getElementById('app');
+function esc(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function codeLabel(key){return key.split('').map((v,i)=>AXES[i].symbols[Number(v)]).join(' · ');}
+function clearTransition(){if(state.timer!==null)clearTimeout(state.timer);state.timer=null;state.locked=false;state.revision++;}
+function navigate(screen){clearTransition();state.screen=screen;render();window.scrollTo({top:0,behavior:'instant'});}
+function start(){state.answers=Array(8).fill(null);state.index=0;navigate('quiz');}
+function choose(value){
+ if(state.screen!=='quiz'||state.locked||(value!==0&&value!==1))return false;
+ state.locked=true;state.answers[state.index]=value;
+ const index=state.index,revision=state.revision;
+ app.querySelectorAll('.option').forEach((b,i)=>{b.disabled=true;b.classList.toggle('selected',i===value);b.setAttribute('aria-pressed',String(i===value));});
+ state.timer=setTimeout(()=>{
+  if(revision!==state.revision||state.screen!=='quiz'||state.index!==index)return;
+  state.timer=null;state.locked=false;
+  if(index===7)navigate('result');else{state.index++;render();}
+ },450);
+ return true;
+}
+function previous(){if(state.screen!=='quiz'||state.index===0)return;clearTransition();state.index--;render();}
+function edit(){state.index=7;navigate('quiz');}
+function card(p,opposite=false){
+ const source=p.sources.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)} ↗</a>`).join(' · ') + '<br>原文按提供的资料录入；外链为篇章对照阅读。';
+ return `<article class="personality ${opposite?'opposite':''}"><div class="personality-head"><div class="eyebrow">${opposite?'你的另一面 · 对照人格':'你的名士人格 · 文学镜像'}</div><div class="code">${codeLabel(p.key)}</div><div class="named-card"><span class="name serif">${esc(p.representative)}</span><div><h2>${esc(p.title)}</h2><p>${esc(p.type)} · ${esc(p.family)}</p></div></div></div><section class="section"><h3>原文 · 故事的来处</h3><blockquote>${esc(p.original)}</blockquote><div class="source">${source}</div></section><section class="section"><h3>白话释义</h3><p>${esc(p.translation)}</p></section><section class="section"><h3>现代解读</h3><p>${esc(p.interpretation)}</p></section></article>`;
+}
+function render(){
+ if(state.screen==='home'){
+ app.innerHTML=`<div class="page-enter"><section class="hero"><div><div class="eyebrow">八问之间，照见一种风度</div><h1 tabindex="-1">在古人的故事里，<br>遇见自己。</h1><p class="intro">你会赴一场清谈，还是独享一段山水？<br>从八个日常选择出发，寻找属于你的名士人格。</p><button class="primary" id="start">开始八问 <span aria-hidden="true">→</span></button><p class="fine">8 道题 · 约 2 分钟 · 无需登录</p></div><div class="cover" aria-hidden="true"><svg viewBox="0 0 400 420" fill="none"><path d="M-20 340 Q50 190 125 295 Q210 125 310 280 Q350 215 430 310 V440 H-20Z" fill="#ccd7c3"/><path d="M-20 380 Q110 235 210 365 Q300 240 440 355 V440 H-20Z" fill="#b2c3a6"/><path d="M310 365 Q301 290 321 188 M320 247 Q293 224 290 198 M316 279 Q341 247 355 245" stroke="#638064" stroke-width="2"/><path d="M286 196q-20-30-22-28 2 27 22 28M291 203q-7-35 1-35 8 25-1 35M349 247q17-24 30-23-9 23-30 23M338 260q27-5 34 4-25 10-34-4" fill="#638064"/></svg><div class="cover-title">世说新语</div><div class="cover-caption">清谈 · 山水 · 意趣 · 风度</div></div></section><section class="dimensions" aria-label="四个测试维度">${AXES.map(a=>`<div class="small-card"><strong>${a.symbols.join(' / ')}</strong><p>${a.name}</p><p>${a.labels.join(' · ')}</p></div>`).join('')}</section><p class="notice">十六名士，四种风骨：素实、风物、玄思、幽怀。在日常选择中，照见你此刻的处世倾向。</p></div>`;
+ document.getElementById('start').onclick=start;
+ }else if(state.screen==='quiz'){
+ const q=QUESTIONS[state.index];
+ app.innerHTML=`<section class="quiz page-enter"><div class="topline"><span>八问 · 寻你的名士风度</span><span aria-live="polite">第 ${state.index+1} / 8 题</span></div><progress value="${state.index}" max="8" aria-label="已完成题数"></progress><div class="question-panel"><div class="eyebrow">第 ${['一','二','三','四','五','六','七','八'][state.index]} 问</div><h1 tabindex="-1">${esc(q.text)}</h1><p class="instruction">选更接近你的一项，没有标准答案。选择后将自动进入下一步。</p><div class="options">${q.options.map((o,i)=>`<button class="option ${state.answers[state.index]===i?'selected':''}" data-choice="${i}" aria-pressed="${state.answers[state.index]===i}"><span class="letter" aria-hidden="true">${i===0?'A':'B'}</span><span>${esc(o)}</span></button>`).join('')}</div></div><div class="navrow"><button class="text-button" id="back" ${state.index===0?'disabled':''}>← 上一题</button><span class="fine">${state.answers[state.index]!==null?'已保留你的选择，可重新选择。':'跟随此刻最自然的想法。'}</span></div></section>`;
+ app.querySelectorAll('[data-choice]').forEach(b=>b.onclick=()=>choose(Number(b.dataset.choice)));
+ document.getElementById('back').onclick=previous;
+ }else{
+ const result=calculate(state.answers);
+ app.innerHTML=`<div class="page-enter"><div class="result-top"><div class="eyebrow">你的名士人格</div><h1 tabindex="-1">${esc(result.personality.title)}</h1><div class="result-name serif">${esc(result.personality.representative)}</div><p class="result-code">${codeLabel(result.key)}</p><span class="badge">${result.personality.family} · ${result.personality.type}</span></div><div class="result-grid">${card(result.personality)}<div>${card(result.opposite,true)}<p class="fine">对照人格将四个维度全部翻转，用来观察另一种选择方式，不代表历史人物彼此对立。</p></div></div><section class="axis-card" aria-label="你的四维倾向">${AXES.map((a,i)=>{const v=Number(result.key[i]);return `<div class="axis-row"><span class="axis-symbol">${a.symbols[v]}</span><div class="axis-detail"><strong>${a.name} · ${a.labels[v]}</strong><p>${result.mixed[i]?`兼具 ${a.symbols.join(' / ')} 两种倾向；按第 ${i+5} 题情境选择归类。`:'两道题选择一致，采用这一倾向。'}</p></div></div>`;}).join('')}</section><div class="result-actions"><button class="secondary" id="edit">返回修改答案</button><button class="primary" id="restart">重新测试 ↻</button></div><p class="explanation">每个维度对应两题；不一致时以第 5—8 题为准。这是本站的趣味分类规则，未经过心理测量验证。上述类型、称号和现代解读为原创；古文内容采用你们提供的资料，外链供对照查阅，不代表已进行逐字校勘。</p></div>`;
+ document.getElementById('restart').onclick=start;document.getElementById('edit').onclick=edit;
+ }
+ const heading=app.querySelector('h1');if(heading)heading.focus({preventScroll:true});
+}
+render();
+</script>
+</body>
+</html>
